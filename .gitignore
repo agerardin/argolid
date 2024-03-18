@@ -568,3 +568,7 @@ scratch/
 build/
 build_man/
 venv/
+
+
+# argolid out
+zarr

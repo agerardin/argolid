@@ -1,0 +1,11 @@
+visType: Viv  # type 'string'
+outDir:  # type 'Directory'
+    class: Directory
+    path: /Users/antoinegerardin/Documents/projects/cyto-explorer/packages/vaex-api/data/cwl2/zarr
+minDim: 1024  # type 'int'
+inpDir:  # type 'Directory'
+    class: Directory
+    path: /Users/antoinegerardin/Documents/projects/cyto-explorer/packages/vaex-api/data/cwl2/pyramid/images
+imageName: pyramid  # type 'string'
+filepattern: "x{x:d+}_y{y:d+}_c{c:d}.ome.tiff"  # type 'string' (optional)
+ds: '{"1":"mean"}'  # type 'string'
