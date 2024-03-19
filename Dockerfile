@@ -9,7 +9,8 @@ WORKDIR ${EXEC_DIR}
 
 RUN pip3 install argolid typer==0.9
 
+COPY ./src/python/pyproject.toml ${EXEC_DIR}
 COPY ./src/python/container ${EXEC_DIR}/container
+RUN pip3 install ${EXEC_DIR}
 
-ENTRYPOINT ["python3", "-m", "container"]
-CMD ["--help"]
+CMD ["python3", "-m", "container"]

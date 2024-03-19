@@ -37,7 +37,7 @@ outputs:
     type: Directory
 requirements:
   DockerRequirement:
-    dockerPull: polusai/argolid:latest
+    dockerPull: polusai/argolid-container:0.1.0
   InitialWorkDirRequirement:
     listing:
     - entry: $(inputs.outDir)
